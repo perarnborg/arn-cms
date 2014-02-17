@@ -35,5 +35,10 @@ class ArnContentType extends CacheableModel
                 'action' => Relation::ACTION_CASCADE
             )
         ));
+        $this->hasMany('id', 'ArnField', 'field_id', array(
+            'foreignKey' => array(
+                'action' => Relation::ACTION_CASCADE
+            )
+        ));
     }
 }

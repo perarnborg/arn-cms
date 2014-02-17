@@ -37,6 +37,7 @@ class Security extends Plugin
 
 			//Private area resources
 			$privateResources = array(
+				'arnstructure' => array('index', 'contenttypes', 'contenttypes', 'taxonomies', 'taxonomy'),
 			);
 			foreach ($privateResources as $resource => $actions) {
 				$acl->addResource(new Phalcon\Acl\Resource($resource), $actions);
