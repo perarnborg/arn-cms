@@ -1,0 +1,17 @@
+**.svn
+.git
+.gitignore
+.project
+.settings
+deploy
+README.md
+.buildpath
+*~
+*.bkp
+cache
+public/css/_*
+.DS_Store
+.sass-cache
+schemas
+public/email_templates
+app/config

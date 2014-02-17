@@ -1,0 +1,17 @@
+app/config/config.ini*
+cache/volt/*.php
+cache/file/*
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+.project
+.settings
+.buildpath
+*.komodoproject
+*.sublime-project
+*.sublime-workspace
+.idea/
+public/css/application.css
+deploy/run-deploy
+.sass-cache

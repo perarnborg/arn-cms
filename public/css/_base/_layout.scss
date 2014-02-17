@@ -1,0 +1,26 @@
+body {
+	padding: 10px;
+}
+.limiter {
+	margin: 0 auto;
+	max-width: $limiter-max-width;
+	min-width: $limiter-min-width;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.grid-row {
+	@include clearfix();
+	margin: 0 -10px;
+	.grid-col {
+		@include box-sizing(border-box);
+		float: left;
+		padding: 0 10px;
+	}
+}
+@for $i from 1 through $grid-columns {
+	.col-#{$i} {
+		width: col($i)
+	}
+}

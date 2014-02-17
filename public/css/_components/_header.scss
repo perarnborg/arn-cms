@@ -1,0 +1,19 @@
+.header-global {
+	a {
+		background: #fe7924;
+		color: white;
+		display: block;
+		margin: 0 0 10px;
+		padding: 4px 10px;
+	}
+}
+.main-menu {
+	float: left;
+	li {
+		display: inline-block;
+		margin: 0 10px 0 0;
+	}
+}
+.signin-menu {
+	float: right;
+}

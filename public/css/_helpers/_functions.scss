@@ -1,0 +1,11 @@
+$grid-columns: 20;
+$grid-width: 100% / $grid-columns;
+@function col($n, $parent-n: false) {
+  @if $parent-n {
+    $parent-size: $grid-width * $parent-n;
+    $child-size: $grid-width * $n;
+    @return ($child-size / $parent-size) * 100%;
+  } @else {
+    @return $grid-width * $n;
+  }
+}

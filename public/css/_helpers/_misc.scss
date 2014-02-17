@@ -1,0 +1,37 @@
+// Clearfix
+.clearfix {
+  @include clearfix;
+}
+
+// Behaviours
+.hidden-text {
+  overflow: hidden;
+  position: relative;
+  text-indent: -9999px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+// Just hidden
+.hidden { display: none; }
+
+// Hide element visually, but have it available for screenreaders
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  &.focusable:active,
+  &.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+  }
+}
